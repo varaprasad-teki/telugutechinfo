@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080a12">
+  <meta name="description" content="Discover practical Telugu tech tips, digital tricks and education updates. Watch the latest videos and subscribe on YouTube.">
+  <title>Creator Hub — Tech • Education • Telugu</title>
+  <style>
+    :root{--bg:#080a12;--panel:#101421;--panel2:#151b2b;--text:#f7f8fc;--muted:#a5aec2;--red:#ff334f;--orange:#ff7a45;--line:rgba(255,255,255,.10);--mint:#9df5cf;--radius:24px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% -10%,rgba(255,51,79,.16),transparent 38%),radial-gradient(ellipse at 0% 30%,rgba(96,89,255,.10),transparent 35%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}button,input{font:inherit}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(8,10,18,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+    .navin{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:-.04em}.logo{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--red),var(--orange));box-shadow:0 8px 28px #ff334f33;font-size:19px}
+    .brand small{display:block;font-size:10px;letter-spacing:.17em;color:var(--muted);font-weight:700;margin-top:-4px}
+    .navlinks{display:flex;align-items:center;gap:25px;color:#c3cada;font-size:13px;font-weight:650}.navlinks a:hover{color:white}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid transparent;border-radius:999px;padding:13px 19px;font-size:13px;font-weight:800;transition:.2s;cursor:pointer}
+    .btn-primary{background:linear-gradient(115deg,var(--red),var(--orange));color:white;box-shadow:0 9px 28px #ff334f30}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 13px 35px #ff334f48}
+    .btn-ghost{border-color:var(--line);background:#ffffff08;color:white}.btn-ghost:hover{background:#ffffff12}
+    .hero{padding:78px 0 55px;display:grid;grid-template-columns:1.08fr .92fr;gap:45px;align-items:center;min-height:590px}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;padding:7px 12px;border:1px solid #ff53633d;border-radius:999px;background:#ff334f12;color:#ff9ba7;font-size:11px;font-weight:850;letter-spacing:.12em;text-transform:uppercase}
+    .pulse{width:7px;height:7px;background:var(--mint);border-radius:50%;box-shadow:0 0 14px var(--mint)}
+    h1{font-size:clamp(42px,6vw,76px);line-height:1.02;letter-spacing:-.065em;margin:23px 0 20px;font-weight:900}h1 span{background:linear-gradient(100deg,#ff566b,#ffb27e 65%,#ffe0b2);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{max-width:570px;color:var(--muted);font-size:17px;line-height:1.8}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:27px 0 28px}
+    .social-proof{display:flex;align-items:center;gap:13px;color:var(--muted);font-size:12px}.avatars{display:flex}.avatars span{display:grid;place-items:center;width:30px;height:30px;margin-left:-6px;border:2px solid var(--bg);border-radius:50%;background:#232b42;font-size:13px}.avatars span:first-child{margin-left:0}
+    .visual{position:relative;min-height:420px;display:grid;place-items:center}.orb{position:absolute;width:320px;height:320px;border-radius:50%;background:linear-gradient(135deg,#ff334f55,#8d4bff35);filter:blur(5px);box-shadow:0 0 100px #ff334f16}
+    .showcase{position:relative;width:min(100%,430px);border:1px solid #ffffff20;border-radius:28px;padding:16px;background:linear-gradient(145deg,#1a2031dd,#0e111bdd);box-shadow:0 30px 90px #0008;transform:rotate(2deg)}
+    .showcase-top{display:flex;align-items:center;justify-content:space-between;padding:5px 3px 14px;color:#c0c7d8;font-size:11px;font-weight:750}.dots{display:flex;gap:5px}.dots i{width:6px;height:6px;background:#5a6278;border-radius:50%}
+    .video-preview{aspect-ratio:16/10;border-radius:18px;overflow:hidden;position:relative;background:linear-gradient(135deg,#281321,#3c1d35 55%,#11182c);display:grid;place-items:center}
+    .video-preview:before,.video-preview:after{content:"";position:absolute;border:1px solid #ffffff12;border-radius:50%;width:260px;height:260px}.video-preview:after{width:190px;height:190px}
+    .play{position:relative;z-index:2;width:66px;height:66px;border-radius:22px;display:grid;place-items:center;background:linear-gradient(135deg,var(--red),var(--orange));box-shadow:0 8px 32px #ff334f60;font-size:24px;padding-left:4px}
+    .preview-tag{position:absolute;z-index:3;top:17px;left:17px;border-radius:8px;padding:6px 9px;background:#ffffff12;border:1px solid #ffffff20;font-size:10px;font-weight:800;letter-spacing:.08em}
+    .preview-bottom{position:absolute;z-index:3;bottom:17px;left:18px;right:18px;display:flex;justify-content:space-between;align-items:end}.preview-bottom strong{font-size:23px;line-height:1.1;letter-spacing:-.04em}.preview-bottom small{display:block;color:#e6b8c3;font-size:10px;margin-top:6px}
+    .mini-cards{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.mini{padding:13px;border-radius:14px;background:#ffffff08;border:1px solid #ffffff0d}.mini b{display:block;font-size:15px}.mini small{font-size:10px;color:var(--muted)}
+    .float{position:absolute;padding:12px 15px;border:1px solid #ffffff20;background:#141929e8;backdrop-filter:blur(10px);border-radius:16px;box-shadow:0 15px 45px #0005;font-size:12px;font-weight:800}.float span{color:var(--mint);margin-right:6px}.float.one{top:36px;right:-8px}.float.two{bottom:42px;left:-10px}
+    .ticker{border-block:1px solid var(--line);background:#ffffff03}.tickerin{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:17px 0;color:#a8b0c3;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.ticker strong{color:#f4f5fa}
+    section{padding:83px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:29px}.kicker{font-size:11px;color:#ff8291;font-weight:850;text-transform:uppercase;letter-spacing:.16em}.section-head h2{font-size:clamp(30px,4vw,45px);letter-spacing:-.055em;line-height:1.1;margin:9px 0 0}.section-head p{max-width:440px;color:var(--muted);font-size:14px;margin:0}
+    .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.feature{padding:24px;border:1px solid var(--line);background:linear-gradient(145deg,#151a29,#0d101a);border-radius:22px;transition:.2s}.feature:hover{transform:translateY(-4px);border-color:#ff53634d}.iconbox{width:46px;height:46px;display:grid;place-items:center;border-radius:15px;background:#ff334f16;font-size:21px;margin-bottom:20px}.feature h3{font-size:18px;margin:0 0 8px;letter-spacing:-.025em}.feature p{margin:0;color:var(--muted);font-size:13px;line-height:1.8}
+    .video-section{background:linear-gradient(180deg,transparent,#ffffff03,transparent)}.video-layout{display:grid;grid-template-columns:1fr .72fr;gap:20px}.embed-card,.side-card{border:1px solid var(--line);border-radius:24px;background:var(--panel);overflow:hidden}.embed-head{padding:19px 21px;display:flex;align-items:center;justify-content:space-between;gap:12px}.embed-head h3{margin:0;font-size:16px}.live-label{color:var(--mint);font-size:10px;font-weight:850;letter-spacing:.1em}.embed{aspect-ratio:16/9;background:#111625}.embed iframe{width:100%;height:100%;border:0}.side-card{padding:24px;display:flex;flex-direction:column;justify-content:center;background:radial-gradient(ellipse at 100% 0%,#ff334f16,transparent 50%),var(--panel)}.side-card h3{font-size:26px;line-height:1.15;letter-spacing:-.04em;margin:12px 0}.side-card p{color:var(--muted);font-size:13px;line-height:1.8}.checklist{display:grid;gap:13px;margin:15px 0 22px}.check{display:flex;gap:10px;align-items:center;font-size:13px;color:#dce1ec}.check i{font-style:normal;display:grid;place-items:center;width:22px;height:22px;border-radius:7px;background:#9df5cf16;color:var(--mint);font-size:12px}
+    .banner{padding:34px;border:1px solid #ff52653c;border-radius:28px;background:radial-gradient(ellipse at 0% 100%,#ff334f22,transparent 48%),linear-gradient(120deg,#181321,#111625);display:flex;align-items:center;justify-content:space-between;gap:25px}.banner h2{font-size:clamp(27px,4vw,42px);line-height:1.1;letter-spacing:-.05em;margin:8px 0}.banner p{color:var(--muted);font-size:14px;margin:0}
+    .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.faq{padding:20px;border:1px solid var(--line);border-radius:18px;background:#ffffff04}.faq h3{font-size:15px;margin:0 0 8px}.faq p{font-size:13px;color:var(--muted);margin:0;line-height:1.8}
+    footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:12px}.footerin{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}.footerlinks{display:flex;gap:18px}.footerlinks a:hover{color:white}
+    .reveal{animation:rise .7s both}@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}.menu-toggle{display:none}
+    @media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:55px;gap:10px}.visual{min-height:390px}.float.one{right:0}.float.two{left:0}.video-layout{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.feature-grid{grid-template-columns:1fr 1fr}.navlinks{gap:14px}}
+    @media(max-width:600px){.wrap{width:min(100% - 28px,1160px)}.navin{min-height:66px}.navlinks{display:none;position:absolute;top:66px;left:0;right:0;padding:18px 22px;background:#0d101a;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.menu-toggle{display:inline-flex;background:none;border:1px solid var(--line);color:white;border-radius:12px;padding:9px 11px}.nav .btn-primary{display:none}.hero{padding-top:42px;min-height:unset}h1{font-size:48px}.lead{font-size:15px}.visual{min-height:340px}.showcase{padding:11px}.orb{width:250px;height:250px}.float{font-size:10px;padding:10px 12px}.float.one{top:10px}.float.two{bottom:15px}.preview-bottom strong{font-size:19px}.mini{padding:10px}.mini b{font-size:13px}section{padding:62px 0}.feature-grid{grid-template-columns:1fr}.banner{padding:25px;align-items:flex-start;flex-direction:column}.faq-grid{grid-template-columns:1fr}.tickerin{justify-content:center;text-align:center}.social-proof{align-items:flex-start}.footerin{align-items:flex-start;flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap navin">
+      <a class="brand" href="#home" aria-label="Creator Hub home"><span class="logo">▶</span><span>CREATOR HUB<small>TECH · EDUCATION · TELUGU</small></span></a>
+      <nav class="navlinks" id="navlinks" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#topics">What you'll learn</a><a href="#videos">Latest videos</a><a href="#faq">FAQ</a>
+      </nav>
+      <div style="display:flex;gap:10px;align-items:center">
+        <a class="btn btn-primary" href="https://www.youtube.com/channel/UC72bhJUkOY94BxoiuTTlYIQ?sub_confirmation=1" target="_blank" rel="noopener">▶ Subscribe</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap hero" id="home">
+      <div class="reveal">
+        <div class="eyebrow"><span class="pulse"></span> YOUR NEXT DIGITAL SKILL STARTS HERE</div>
+        <h1>Learn smarter.<br>Explore <span>what's next.</span></h1>
+        <p class="lead">Simple Telugu-friendly tech tips, useful digital tricks and education updates — made to help you learn something valuable, one video at a time.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://www.youtube.com/channel/UC72bhJUkOY94BxoiuTTlYIQ?sub_confirmation=1" target="_blank" rel="noopener">▶ Visit & Subscribe</a>
+          <a class="btn btn-ghost" href="#videos">Explore videos <span aria-hidden="true">↘</span></a>
+        </div>
+        <div class="social-proof"><div class="avatars"><span>📱</span><span>💡</span><span>🎓</span></div><span>Practical tips · Clear explanations · New things to discover</span></div>
+      </div>
+      <div class="visual reveal" aria-label="Creator website preview">
+        <div class="orb"></div>
+        <div class="showcase">
+          <div class="showcase-top"><span>✦ THE CREATOR PLAYBOOK</span><span class="dots"><i></i><i></i><i></i></span></div>
+          <div class="video-preview">
+            <span class="preview-tag">FEATURED • LEARN SOMETHING NEW</span>
+            <div class="play">▶</div>
+            <div class="preview-bottom"><div><strong>TECH MADE<br>SIMPLE.</strong><small>Smart tips for everyday life</small></div><span style="font-size:28px">✳</span></div>
+          </div>
+          <div class="mini-cards"><div class="mini"><b>📱 Tech tips</b><small>Useful digital tricks</small></div><div class="mini"><b>🎓 Education</b><small>Updates made clear</small></div></div>
+        </div>
+        <div class="float one"><span>✦</span> Learn at your pace</div>
+        <div class="float two"><span>✓</span> Easy-to-follow videos</div>
+      </div>
+    </section>
+
+    <div class="ticker"><div class="wrap tickerin"><span><strong>TECH</strong> that helps</span><span>✦</span><span><strong>EDUCATION</strong> that guides</span><span>✦</span><span><strong>TELUGU</strong> made accessible</span><span>✦</span><span><strong>YOU</strong> keep growing</span></div></div>
+
+    <section class="wrap" id="about">
+      <div class="section-head"><div><div class="kicker">Welcome to the channel</div><h2>Useful knowledge.<br>Zero unnecessary noise.</h2></div><p>A simple place to discover helpful content, understand digital tools and stay informed about education topics.</p></div>
+      <div class="feature-grid">
+        <article class="feature"><div class="iconbox">⚡</div><h3>Quick tech solutions</h3><p>Practical phone, app and internet tips explained in a clear, beginner-friendly way.</p></article>
+        <article class="feature"><div class="iconbox">🧠</div><h3>Learn step by step</h3><p>Easy explanations designed to make useful digital skills less confusing.</p></article>
+        <article class="feature"><div class="iconbox">🎯</div><h3>Education updates</h3><p>Helpful exam-related information and learning guidance. Always check official sources for final dates and notices.</p></article>
+      </div>
+    </section>
+
+    <section class="video-section" id="topics">
+      <div class="wrap">
+        <div class="section-head"><div><div class="kicker">Made for curious minds</div><h2>Find your next useful idea.</h2></div><p>Whether you're exploring a new app or looking for an education update, start with a topic that matters to you.</p></div>
+        <div class="feature-grid">
+          <article class="feature"><div class="iconbox">📲</div><h3>Apps & phone tricks</h3><p>Discover settings, shortcuts, privacy options and helpful features you might have missed.</p></article>
+          <article class="feature"><div class="iconbox">🛠️</div><h3>Fix everyday tech issues</h3><p>Simple troubleshooting ideas for common app, connectivity and device problems.</p></article>
+          <article class="feature"><div class="iconbox">📚</div><h3>Student resources</h3><p>Explore entrance-exam updates, preparation tips and educational explainers.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap video-section" id="videos">
+      <div class="section-head"><div><div class="kicker">Watch and discover</div><h2>Latest from YouTube.</h2></div><p>The video area below uses your channel's uploads playlist. Select a video to watch it here.</p></div>
+      <div class="video-layout">
+        <div class="embed-card">
+          <div class="embed-head"><h3>📺 Channel video playlist</h3><span class="live-label">YOUTUBE</span></div>
+          <div class="embed"><iframe title="YouTube channel uploads playlist" src="https://www.youtube.com/embed/videoseries?list=UU72bhJUkOY94BxoiuTTlYIQ" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+          <div class="embed-head"><span style="font-size:12px;color:var(--muted)">More videos and Shorts are on your channel.</span><a href="https://www.youtube.com/channel/UC72bhJUkOY94BxoiuTTlYIQ/videos" target="_blank" rel="noopener" style="font-size:12px;font-weight:800;color:#ff8291">View all ↗</a></div>
+        </div>
+        <aside class="side-card">
+          <div class="kicker">Don't miss the next one</div><h3>Make learning part of your scroll.</h3><p>Subscribe to the channel for new tech tips, digital discoveries and education content.</p>
+          <div class="checklist"><div class="check"><i>✓</i> Helpful ideas in simple language</div><div class="check"><i>✓</i> Tech tips you can try yourself</div><div class="check"><i>✓</i> Education topics worth keeping up with</div></div>
+          <a class="btn btn-primary" href="https://www.youtube.com/channel/UC72bhJUkOY94BxoiuTTlYIQ?sub_confirmation=1" target="_blank" rel="noopener">Subscribe on YouTube ↗</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="banner"><div><div class="kicker">Your next step</div><h2>Curiosity looks good on you.</h2><p>Watch a video, try something new, and keep learning.</p></div><a class="btn btn-primary" href="https://www.youtube.com/channel/UC72bhJUkOY94BxoiuTTlYIQ?sub_confirmation=1" target="_blank" rel="noopener">Join the channel ↗</a></div>
+    </section>
+
+    <section class="wrap" id="faq">
+      <div class="section-head"><div><div class="kicker">Quick answers</div><h2>Good to know.</h2></div></div>
+      <div class="faq-grid">
+        <article class="faq"><h3>What can I find here?</h3><p>Tech tips, digital tricks, app tutorials and education-related content, with a focus on simple explanations.</p></article>
+        <article class="faq"><h3>How do I watch more?</h3><p>Use the video playlist above or open the channel directly on YouTube to browse its videos and Shorts.</p></article>
+        <article class="faq"><h3>Is the website mobile-friendly?</h3><p>Yes. The layout adapts to phones, tablets and desktop screens, with a compact mobile navigation menu.</p></article>
+        <article class="faq"><h3>Are education updates official?</h3><p>This site is a creator page, not an official exam authority. Confirm important announcements on the relevant official website.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap footerin"><a class="brand" href="#home"><span class="logo">▶</span><span>CREATOR HUB<small>TECH · EDUCATION · TELUGU</small></span></a><span>Built for curious minds. © <span id="year"></span></span><div class="footerlinks"><a href="#about">About</a><a href="#videos">Videos</a><a href="https://www.youtube.com/channel/UC72bhJUkOY94BxoiuTTlYIQ" target="_blank" rel="noopener">YouTube ↗</a></div></div></footer>
+  <script>
+    const toggle=document.getElementById('menuToggle');
+    const nav=document.getElementById('navlinks');
+    toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'✕':'☰';});
+    nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰';}));
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
