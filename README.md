@@ -1,0 +1,1 @@
+# telugutechinfo
